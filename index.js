@@ -26,5 +26,5 @@ app.use(router);
 
 
 app.listen(PORT, () => {
-  console.log(`http://localhost:${PORT}`);
+  console.log(`http://100.26.151.183:3000:${PORT}`);
 });
