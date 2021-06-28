@@ -12,7 +12,7 @@ const bodyParser = multer();
 app.use(express.static('public'))
 
 
-// app.use( cors('*') )
+app.use( cors() )
 
 app.use( morgan ('dev') )
 // on utlise .none() pour dire qu'on attends pas de fichier, uniquement des inputs "classiques" !
