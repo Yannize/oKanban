@@ -313,7 +313,7 @@ const cardModule = {
 module.exports = cardModule
 
 },{"./label":3,"./utils":5}],3:[function(require,module,exports){
-const utils = require('./utils')
+const utils = require('./utils');
 
 const labelModule = {
   labelList: [],
@@ -782,15 +782,14 @@ const labelModule = {
       label.style.backgroundColor = labelPatched.color;
       const deleteLabelBtn = document.querySelector('#btnDeleteLabel');
       const cloneBtn = document.importNode(deleteLabelBtn.content, true);
-      const realBtnClose = cloneBtn.querySelector('.delete')
-      realBtnClose.addEventListener('click', labelModule.removeLabelFromCard)
+      const realBtnClose = cloneBtn.querySelector('.delete');
+      realBtnClose.addEventListener('click', labelModule.removeLabelFromCard);
       label.append(cloneBtn);
-
     }
   },
 };
 
-module.exports = labelModule
+module.exports = labelModule;
 
 },{"./utils":5}],4:[function(require,module,exports){
 const cardModule = require('./card')
@@ -974,7 +973,7 @@ const utils = {
     }
   },
 
-  base_url: 'http://localhost:3000/api',
+  base_url: 'http://100.26.151.183:3000/api',
 };
 
 module.exports = utils;

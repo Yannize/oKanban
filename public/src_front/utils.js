@@ -7,7 +7,7 @@ const utils = {
     }
   },
 
-  base_url: 'http://localhost:3000/api',
+  base_url: 'http://100.26.151.183:3000/api',
 };
 
 module.exports = utils;
