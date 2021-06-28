@@ -1,5 +1,5 @@
-// const utils = require('./utils')
-// const labelModule = require('./label')
+const utils = require('./utils')
+const labelModule = require('./label')
 
 const cardModule = {
   // méthode pour afficher la modale "ajouter une carte"
@@ -195,4 +195,4 @@ const cardModule = {
   },
 };
 
-// module.exports = cardModule
+module.exports = cardModule

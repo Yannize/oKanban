@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon .",
-    "build:front": "npx browserify -o public/js/bundle.js -e public/src_front/app.js && npm starnpx minify public/js/bundle.js > public/js/bundle.min.js"
+    "build:front": "npx browserify -o public/js/bundle.js -e public/src_front/app.js && npx minify public/js/bundle.js > public/js/bundle.min.js"
   },
   "repository": {
     "type": "git",

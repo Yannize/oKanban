@@ -1,8 +1,8 @@
-// const utils = require('./utils')
-// const listModule = require('./list')
-// const cardModule = require('./card')
-// const labelModule = require('./label')
-// const Sortable = require('sortablejs')
+const utils = require('./utils')
+const listModule = require('./list')
+const cardModule = require('./card')
+const labelModule = require('./label')
+const Sortable = require('sortablejs')
 
 // on objet qui contient des fonctions
 const app = {

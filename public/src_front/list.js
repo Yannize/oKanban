@@ -1,5 +1,7 @@
-// const cardModule = require('./card')
-// const utils = require('./utils')
+const cardModule = require('./card')
+const utils = require('./utils')
+const Sortable = require('sortablejs')
+
 
 const listModule = {
   // méthode qui ouvre la modale "nouvelle liste"
@@ -167,4 +169,4 @@ const listModule = {
 
 
 
-// module.exports = listModule
+module.exports = listModule

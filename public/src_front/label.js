@@ -1,4 +1,4 @@
-// const utils = require('./utils');
+const utils = require('./utils');
 
 const labelModule = {
   labelList: [],
@@ -474,4 +474,4 @@ const labelModule = {
   },
 };
 
-// module.exports = labelModule;
+module.exports = labelModule;
