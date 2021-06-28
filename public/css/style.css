@@ -1,0 +1,272 @@
+body {
+  height: 100vh;
+  overflow-y: hidden;
+  background-color: #162131;
+}
+
+h1.title {
+  color: #c2cedf;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.test {
+  width: 130%;
+  margin: 30px;
+}
+
+#addListButton {
+  text-shadow: 1px 1px 2px black;
+  position: absolute;
+  left: -215px;
+  top: 0px;
+  font-size: 22px;
+  background-color: #042b66;
+  border: 2px solid rgb(85, 85, 85);
+}
+
+#addListButton:hover {
+  border: 2px solid rgb(211, 211, 211);
+  background-color: #0045ad;
+}
+
+#addLabelButton {
+  text-shadow: 1px 1px 2px black;
+  position: absolute;
+  right: 265px;
+  top: 0px;
+  font-size: 20px;
+  background-color: #314a6e;
+}
+
+#addLabelButton:hover {
+  background-color: #356dc2;
+}
+
+#updateLabelButton {
+  text-shadow: 1px 1px 2px black;
+  position: absolute;
+  right: 50px;
+  top: 0px;
+  font-size: 20px;
+  background-color: #978947;
+}
+
+#updateLabelButton:hover {
+  background-color: #d4b726;
+}
+
+#deleteLabelButton {
+  text-shadow: 1px 1px 2px black;
+  position: absolute;
+  right: -185px;
+  top: 0px;
+  font-size: 20px;
+  background-color: #863550;
+}
+
+#deleteLabelButton:hover {
+  background-color: #c02f5f;
+}
+
+#tagToUpdateContainer .tag {
+  font-size: 20px;
+  padding: 14px !important;
+  margin: 10px !important;
+}
+
+#tagToUpdateContainer .tag .delete {
+  margin-left: 10px;
+  transform: scale(1.4);
+}
+
+#tagToUpdateContainer .tag:hover {
+  cursor: pointer;
+}
+
+#tagToDeleteContainer .tag {
+  font-size: 20px;
+  padding: 14px !important;
+  margin: 10px !important;
+}
+
+#tagToDeleteContainer .tag .delete {
+  margin-left: 10px;
+  transform: scale(1.4);
+}
+
+#deleteAllListButton {
+  position: absolute;
+  bottom: -100px;
+}
+
+.columns {
+  width: 100%;
+}
+
+.card-lists {
+  background-color: #899fc25e;
+  border-radius: 7px;
+  overflow-x: auto;
+  min-height: 75vh;
+}
+
+.cardContainer {
+  margin-bottom: 20px;
+}
+
+.dropdown-item.is-active:hover {
+  background: #2658a9;
+}
+
+#contentDeleteCardModal .message-header p {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 27px;
+}
+
+#deleteCardConfirm {
+  width: 200px;
+}
+
+.deleteListBtn {
+  margin-left: 10px;
+}
+
+.modal-content {
+  height: 150px;
+}
+
+.box {
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.144);
+}
+
+.panel {
+  max-width: 350px;
+}
+
+.panel-block {
+  border: 1px solid #3d5e92;
+  background-color: rgba(0, 0, 0, 0.185) !important;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.096);
+}
+
+.panel-heading {
+  border: none;
+  background-color: #193872 !important;
+}
+
+input[type='color'] {
+  width: 49px;
+  height: 40px;
+  border: none;
+  border-radius: 100px;
+  background: none;
+}
+input[type='color']::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type='color']::-webkit-color-swatch {
+  border: solid 1px #000;
+  border-radius: 100px;
+}
+
+input[type='color']:focus {
+  outline: none;
+  border: none;
+}
+
+.box.cardEditForm {
+  padding: 10px;
+}
+
+#addLabelModal .modal-card {
+  width: 400px;
+}
+
+#addLabelModal .colorSubmit {
+  display: flex;
+  align-items: center;
+}
+
+#addLabelModal .colorSubmit input {
+  margin-right: 40px;
+}
+
+span.tag {
+  margin: 0 2px;
+}
+
+div.box.card {
+  position: relative;
+}
+
+.cardContainer .column.is-narrow {
+  margin: 0;
+  padding: 5px 10px;
+  border-radius: 0 0 0 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(58, 58, 58, 0.63);
+  box-shadow: inset 2px -2px 5px rgba(43, 43, 43, 0.534);
+}
+
+span.tag {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 0px 15px rgb(255, 255, 255);
+  /* transform: scale(1.2); */
+  margin: 5px 10px;
+}
+
+.dropdown-item {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.dropdown-item.create {
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 3, 0, 0.795);
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.box.card {
+  border-radius: 10px 0 10px 10px;
+}
+
+.panel-block {
+  border-radius: 0 0 10px 10px;
+  max-height: 700px;
+  overflow-y: auto;
+}
+
+.panel-heading {
+  border-radius: 10px 10px 0 0;
+}
+
+/* scroll bar */
+.panel-block::-webkit-scrollbar {
+  width: 0.4em;
+  /* background-color: red; */
+}
+
+.panel-block::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(230, 230, 230, 0.438);
+}
+
+.panel-block::-webkit-scrollbar-thumb {
+  background-color: rgb(28, 35, 48);
+  outline: 1px solid rgb(50, 62, 82);
+}
